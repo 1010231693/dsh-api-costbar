@@ -1,0 +1,49 @@
+{
+  "name": "dsh-api-costbar",
+  "version": "0.3.7",
+  "description": "一个可以快速查看云端模型api费用的插件，支持手动切换厂商，支持调节刷新频率。",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "screenshots.json"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "plugin",
+    "usage",
+    "balance",
+    "cost",
+    "api",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1010231693/dsh-api-costbar.git"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+# dsh-api-costbar — 云端 API 费用读数条（npm 包名 dsh-api-costbar）。
+# Host 半注册 GET /api/dsh-api-costbar（厂商余额 + 今日花费 + 峰谷单价）与
+# POST /api/dsh-api-costbar/settings；包声明 dsh.client 提供浏览器侧栏读数条。
+- insert:
+    - id: api-costbar
+      name: dsh-api-costbar
